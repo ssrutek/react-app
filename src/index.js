@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import CardList from './CardList';
-import Card from './Card';
+import CardList from './components/CardList';
+import Card from './components/Card';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 import { robots } from './robots';
+import App from './containers/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CardList robots={robots}/> {/* CardList is accepting robots array. */}
+    <App />
   </React.StrictMode>
 );
 
